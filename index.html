@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>Gumi Kft Chatbot</title>
+</head>
+<body>
+  <h1>Üdvözöljük a Gumi Kft oldalán!</h1>
+  <p>Kattintson a jobb alsó sarokban megjelenő chatbot ikonra kérdés esetén.</p>
+
+  <div id="webchat-container"></div>
+
+  <script src="https://cdn.botpress.cloud/webchat/v2/inject.js"></script>
+  <script>
+    window.botpressWebChat.init({
+      botId: "fc980552-4ff3-4110-94f0-c09a03840700",
+      clientId: "29aa3be7-a895-4197-93a4-23a5648bbe8b",
+      hostUrl: "https://cdn.botpress.cloud/webchat/v2",
+      messagingUrl: "https://messaging.botpress.cloud",
+      botName: "Gumi Kft Chatbot",
+      showPoweredBy: false,
+      showCloseButton: true
+    });
+  </script>
+</body>
+</html>
