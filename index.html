@@ -6,10 +6,9 @@
 </head>
 <body>
   <h1>Üdvözöljük a Gumi Kft oldalán!</h1>
-  <p>Kattintson a jobb alsó sarokban megjelenő chatbot ikonra kérdés esetén.</p>
+  <p>Chateljen velünk a jobb alsó sarokban!</p>
 
-  <div id="webchat-container"></div>
-
+  <!-- Chatbot script -->
   <script src="https://cdn.botpress.cloud/webchat/v2/inject.js"></script>
   <script>
     window.botpressWebChat.init({
@@ -19,7 +18,12 @@
       messagingUrl: "https://messaging.botpress.cloud",
       botName: "Gumi Kft Chatbot",
       showPoweredBy: false,
-      showCloseButton: true
+      showCloseButton: true,
+      enableTranscriptDownload: false,
+      theme: "light",
+      containerWidth: "400px",
+      layoutWidth: "100%",
+      enableReset: true
     });
   </script>
 </body>
