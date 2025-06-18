@@ -5,26 +5,21 @@
   <title>Gumi Kft Chatbot</title>
 </head>
 <body>
-  <div id="webchat-container" style="position: fixed; bottom: 20px; right: 20px; width: 350px; height: 500px; box-shadow: 0 2px 8px rgba(0,0,0,0.2); border-radius: 8px; overflow: hidden;">
-    <script src="https://cdn.botpress.cloud/webchat/v2/inject.js"></script>
-    <script>
-      window.botpressWebChat.init({
-        botId: "fc980552-4ff3-4110-94f0-c09a03840700",
-        clientId: "29aa3be7-a895-4197-93a4-23a5648bbe8b",
-        hostUrl: "https://cdn.botpress.cloud/webchat/v2",
-        messagingUrl: "https://messaging.botpress.cloud",
-        botName: "Gumi Kft Chatbot",
-        containerWidth: "100%",
-        layoutWidth: "100%",
-        showPoweredBy: false,
-        themeName: "prism",
-        theme: "light",
-        stylesheet: "",
-        avatarUrl: "",
-        enableTranscriptDownload: false,
-        showCloseButton: true
-      });
-    </script>
-  </div>
+  <h1>Üdv a Gumi Kft demo oldalán!</h1>
+  <p>A jobb alsó sarokban használhatod a chatbotot kérdéseidre.</p>
+
+  <!-- Botpress Webchat betöltése -->
+  <script src="https://cdn.botpress.cloud/webchat/v2/inject.js"></script>
+  <script>
+    window.botpressWebChat.init({
+      botId: "fc980552-4ff3-4110-94f0-c09a03840700",
+      clientId: "29aa3be7-a895-4197-93a4-23a5648bbe8b",
+      hostUrl: "https://cdn.botpress.cloud/webchat/v2",
+      messagingUrl: "https://messaging.botpress.cloud",
+      showPoweredBy: false,
+      showCloseButton: true,
+      theme: "light"
+    });
+  </script>
 </body>
 </html>
